@@ -1,0 +1,6 @@
+framework module Pods_TinyQRScanner_Sample {
+  umbrella header "Pods-TinyQRScanner_Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}

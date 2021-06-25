@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70A22DC04E3CAAC3C2CFCA84 /* Pods_TinyQRScanner_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729A83327C7F37B2A6BE84F3 /* Pods_TinyQRScanner_Sample.framework */; };
 		921807A5223B6DA200F36C40 /* CopyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921807A4223B6DA200F36C40 /* CopyLabel.swift */; };
 		92368507223624F7005C1AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92368506223624F7005C1AD7 /* AppDelegate.swift */; };
 		9236850E223624F8005C1AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9236850D223624F8005C1AD7 /* Assets.xcassets */; };
@@ -16,12 +17,13 @@
 		9236852022362AAA005C1AD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9236851F22362AAA005C1AD7 /* DetailViewController.swift */; };
 		9236852322362B1C005C1AD7 /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9236852222362B1C005C1AD7 /* QRData.swift */; };
 		92368528223635AB005C1AD7 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92368527223635AB005C1AD7 /* UIViewController+Alert.swift */; };
-		A746525DEE0110BD2AC201CB /* Pods_QRScanner_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C28B4EE598BD6EFB9577E /* Pods_QRScanner_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		170C28B4EE598BD6EFB9577E /* Pods_QRScanner_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRScanner_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1574F57B60906AB646C68D91 /* Pods-TinyQRScanner_Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyQRScanner_Sample.debug.xcconfig"; path = "Target Support Files/Pods-TinyQRScanner_Sample/Pods-TinyQRScanner_Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		3040D8506B8A5CDA55A05A5A /* Pods-QRScanner_Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRScanner_Sample.debug.xcconfig"; path = "Target Support Files/Pods-QRScanner_Sample/Pods-QRScanner_Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		3C3CA7E9E53BD099841F9BB9 /* Pods-TinyQRScanner_Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyQRScanner_Sample.release.xcconfig"; path = "Target Support Files/Pods-TinyQRScanner_Sample/Pods-TinyQRScanner_Sample.release.xcconfig"; sourceTree = "<group>"; };
+		729A83327C7F37B2A6BE84F3 /* Pods_TinyQRScanner_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyQRScanner_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921807A4223B6DA200F36C40 /* CopyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyLabel.swift; sourceTree = "<group>"; };
 		92368503223624F7005C1AD7 /* TinyQRScanner_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyQRScanner_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92368506223624F7005C1AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A746525DEE0110BD2AC201CB /* Pods_QRScanner_Sample.framework in Frameworks */,
+				70A22DC04E3CAAC3C2CFCA84 /* Pods_TinyQRScanner_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +53,7 @@
 		0F434ADAA818771F48CB32E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				170C28B4EE598BD6EFB9577E /* Pods_QRScanner_Sample.framework */,
+				729A83327C7F37B2A6BE84F3 /* Pods_TinyQRScanner_Sample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +138,8 @@
 			children = (
 				3040D8506B8A5CDA55A05A5A /* Pods-QRScanner_Sample.debug.xcconfig */,
 				AAE8A156DB2481158AEC5B8B /* Pods-QRScanner_Sample.release.xcconfig */,
+				1574F57B60906AB646C68D91 /* Pods-TinyQRScanner_Sample.debug.xcconfig */,
+				3C3CA7E9E53BD099841F9BB9 /* Pods-TinyQRScanner_Sample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -225,7 +229,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QRScanner_Sample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TinyQRScanner_Sample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,15 +242,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QRScanner_Sample/Pods-QRScanner_Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinyQRScanner_Sample/Pods-TinyQRScanner_Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QRScanner_Sample/Pods-QRScanner_Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinyQRScanner_Sample/Pods-TinyQRScanner_Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRScanner_Sample/Pods-QRScanner_Sample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinyQRScanner_Sample/Pods-TinyQRScanner_Sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -397,17 +401,18 @@
 		};
 		92368516223624F8005C1AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3040D8506B8A5CDA55A05A5A /* Pods-QRScanner_Sample.debug.xcconfig */;
+			baseConfigurationReference = 1574F57B60906AB646C68D91 /* Pods-TinyQRScanner_Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TR5BMPZP3;
 				INFOPLIST_FILE = QRScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abhilash.QRScanner.QRScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = io.meshbits.piratewallet.QRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -417,17 +422,18 @@
 		};
 		92368517223624F8005C1AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAE8A156DB2481158AEC5B8B /* Pods-QRScanner_Sample.release.xcconfig */;
+			baseConfigurationReference = 3C3CA7E9E53BD099841F9BB9 /* Pods-TinyQRScanner_Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TR5BMPZP3;
 				INFOPLIST_FILE = QRScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abhilash.QRScanner.QRScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = io.meshbits.piratewallet.QRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

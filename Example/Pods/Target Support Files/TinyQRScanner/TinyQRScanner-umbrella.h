@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_QRScanner_SampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_QRScanner_SampleVersionString[];
+FOUNDATION_EXPORT double TinyQRScannerVersionNumber;
+FOUNDATION_EXPORT const unsigned char TinyQRScannerVersionString[];
 

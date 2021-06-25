@@ -1,16 +1,16 @@
 PODS:
-  - QRScanner (1.0.0-alpha)
+  - TinyQRScanner (1.0.1)
 
 DEPENDENCIES:
-  - QRScanner (from `../`)
+  - TinyQRScanner (from `../`)
 
 EXTERNAL SOURCES:
-  QRScanner:
+  TinyQRScanner:
     :path: "../"
 
 SPEC CHECKSUMS:
-  QRScanner: 23cde410dbcbdfac4ee2e54268cd422847177bac
+  TinyQRScanner: 4077088ff2e8d476af79e6035413648c2c7900ef
 
-PODFILE CHECKSUM: 655ba6d964271ee622f0e08941942f095b854648
+PODFILE CHECKSUM: 70eaa1b625c4f4e730401d554cac41f001c888a4
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

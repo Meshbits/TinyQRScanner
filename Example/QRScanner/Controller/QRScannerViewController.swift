@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import QRScanner
+import TinyQRScanner
 class QRScannerViewController: UIViewController {
     
     @IBOutlet weak var scannerView: QRScannerView! {

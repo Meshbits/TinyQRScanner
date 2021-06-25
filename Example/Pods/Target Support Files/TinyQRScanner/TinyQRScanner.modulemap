@@ -1,0 +1,6 @@
+framework module TinyQRScanner {
+  umbrella header "TinyQRScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
