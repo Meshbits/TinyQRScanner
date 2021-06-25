@@ -1,9 +1,9 @@
 //
 //  QRScannerView.swift
-//  QRCodeReader
+//  ECC-Wallet
 //
-//  Created by KM, Abhilash a on 08/03/19.
-//  Copyright © 2019 KM, Abhilash. All rights reserved.
+//  Created by Lokesh Sehgal on 25/06/21.
+//  Copyright © 2021 Francisco Gindre. All rights reserved.
 //
 
 import Foundation
@@ -15,6 +15,15 @@ public protocol QRScannerViewDelegate: class {
     func qrScanningDidFail()
     func qrScanningSucceededWithCode(_ str: String?)
     func qrScanningDidStop()
+}
+
+extension Notification.Name {
+    // Please use these when view appears or disappears to make sure to not to see the green dot - i.e. camera running status.
+    // This Notification to resume if paused - onAppear
+    static let resumeRecordingIfPaused = Notification.Name(rawValue: "resumeRecordingIfPaused")
+    
+    // This Notification to pause if running - onDisappear
+    static let pauseVideoRecording = Notification.Name(rawValue: "pauseVideoRecording")
 }
 
 public class QRScannerView: UIView {
@@ -29,10 +38,24 @@ public class QRScannerView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         doInitialSetup()
+        
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
         doInitialSetup()
+        NotificationCenter.default.addObserver(self, selector: #selector(pauseVideoRecording(notification:)), name: .pauseVideoRecording, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(resumeRecordingIfPaused(notification:)), name: .resumeRecordingIfPaused, object: nil)
+    }
+    
+    @objc func pauseVideoRecording(notification: Notification) {
+        if captureSession!.isRunning {
+            captureSession!.stopRunning()
+        }
+    }
+    @objc func resumeRecordingIfPaused(notification: Notification) {
+        if !captureSession!.isRunning {
+            captureSession!.startRunning()
+        }
     }
     
     //MARK: overriding the layerClass to return `AVCaptureVideoPreviewLayer`.
